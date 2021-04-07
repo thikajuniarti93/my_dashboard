@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    before_action :authorized, only: [:auto_login]
+    before_action :authorized, only: [:auto_login, :show]
     before_action :set_format_request, only: [:show]
 
     # REGISTER
